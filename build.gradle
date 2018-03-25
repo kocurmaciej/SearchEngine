@@ -3,6 +3,11 @@ version '1.0'
 
 apply plugin: 'java'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'wordsearch.Main'
+    }
+}
 sourceCompatibility = 1.8
 
 repositories {
